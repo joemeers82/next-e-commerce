@@ -18,10 +18,18 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+
+.icon-group:hover .icon-group-hover\:opacity-100 {
+  opacity: 100%;
+}
+
+.icon-group span::before {
+  content: "";
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent black;
 }
