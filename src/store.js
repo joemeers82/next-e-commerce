@@ -4,5 +4,5 @@ export const useStore = create((set) => ({
   productCart: [],
   selectedProduct: {},
   showPreviewProduct: false,
-  showSideCart: true,
+  showSideCart: false,
 }));

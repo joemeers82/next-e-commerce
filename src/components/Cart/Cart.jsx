@@ -46,7 +46,7 @@ export default function Cart() {
         <div className="flex justify-between items-center p-3 border-b">
           {" "}
           <h3 className="text-lg">Shopping Cart</h3>
-          <span className="cursor-pointer" onClick={() => toggleCart()}>
+          <span className="cursor-pointer mr-4" onClick={() => toggleCart()}>
             X
           </span>
         </div>

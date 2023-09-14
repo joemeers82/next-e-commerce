@@ -16,7 +16,7 @@ export default function ProductModal(product) {
     <>
       {state.showPreviewProduct && (
         <div
-          className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 flex items-center justify-center"
+          className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10 flex items-center justify-center"
           onClick={() => closeModal()}
         >
           <div
