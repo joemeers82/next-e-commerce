@@ -2,11 +2,12 @@
 import { useState } from "react";
 import { useStore } from "../../store";
 
-export default function AddToCart({ state }) {
+export default function AddToCart({ product }) {
+  const state = useStore((state) => state);
   const [quantity, setQuantity] = useState(1);
 
   function addToCart(quantity) {
-    const currentProduct = state.selectedProduct;
+    const currentProduct = product;
     const cart = [...state.productCart];
 
     //if product already in cart
@@ -38,7 +39,7 @@ export default function AddToCart({ state }) {
             onClick={() => {
               quantity > 0 ? setQuantity(quantity - 1) : null;
             }}
-            className="transition-colors duration-300 hover:bg-gray-300 border h-[40px] w-[40px] flex items-center justify-center"
+            className="transform  active:translate-y-[.1rem] transition duration-200 transition duration-200 hover:bg-gray-300 border h-[40px] w-[40px] flex items-center justify-center"
           >
             -
           </button>
@@ -47,14 +48,14 @@ export default function AddToCart({ state }) {
           </div>
           <button
             onClick={() => setQuantity(quantity + 1)}
-            className="transition-colors duration-300 hover:bg-gray-300 border h-[40px] w-[40px] flex items-center justify-center"
+            className="transform  active:translate-y-[.1rem] transition duration-200 transition duration-200 hover:bg-gray-300 border h-[40px] w-[40px] flex items-center justify-center"
           >
             +
           </button>
         </div>
         <button
           onClick={() => addToCart(quantity)}
-          className="transition-colors duration-300 hover:bg-gray-300 border px-4 flex items-center justify-center uppercase"
+          className="transform  active:translate-y-[.1rem] transition duration-200 hover:bg-gray-300 border px-4 flex items-center justify-center uppercase"
         >
           Add to Cart
         </button>

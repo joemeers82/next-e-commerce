@@ -53,7 +53,7 @@ export default function ProductModal(product) {
 
                 <p>{state.selectedProduct.description}</p>
                 {/* <div onClick={() => addToCart(product)}> Add to cart</div> */}
-                <AddToCart state={state}></AddToCart>
+                <AddToCart product={state.selectedProduct}></AddToCart>
               </div>
             </div>
           </div>

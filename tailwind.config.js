@@ -17,6 +17,7 @@ module.exports = {
   variants: {
     extend: {
       opacity: ["group-hover"],
+      translate: ["active"],
     },
   },
   plugins: [],
