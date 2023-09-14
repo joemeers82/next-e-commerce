@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ProductList from "@/components/ProductList/ProductList";
-// import StoreInitializer from "@/components/StoreInitializer/StoreInitializer";
 import Header from "@/components/Header/Header";
 import Cart from "@/components/Cart/Cart";
 import { useStore } from "../store";
@@ -18,7 +17,6 @@ export default async function Home() {
 
   return (
     <>
-      {/* <StoreInitializer productCart={[]} /> */}
       <Header />
 
       <main className="flex min-h-screen flex-col items-center justify-between p-24">

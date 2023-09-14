@@ -4,9 +4,9 @@ export function capitalize(string) {
 
 export function stringToSlug(str) {
   return str
-    .toLowerCase() // Convert to lowercase
-    .replace(/[^\w\s-]/g, "") // Remove all non-word chars except for hyphen
-    .trim() // Trim spaces from start and end
-    .replace(/\s+/g, "-") // Replace spaces with hyphens
-    .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
 }

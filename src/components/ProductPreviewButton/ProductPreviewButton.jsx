@@ -6,7 +6,6 @@ export default function ProductPreviewButton({ product }) {
   const previewProduct = (product) => {
     const { productCart } = useStore.getState("productCart");
     useStore.setState({
-      productCart: [...productCart, product],
       selectedProduct: product,
       showPreviewProduct: true,
     });
