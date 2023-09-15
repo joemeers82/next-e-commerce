@@ -34,7 +34,7 @@ export default function HeaderMenu({ categories, classes }) {
       >
         {categories.map((category, i) => {
           return (
-            <li className="md:ml-3" key={i}>
+            <li className="md:ml-3 md:my-4 whitespace-nowrap" key={i}>
               {category}
             </li>
           );
