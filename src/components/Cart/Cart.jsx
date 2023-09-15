@@ -29,7 +29,7 @@ export default function Cart({ classes }) {
   return (
     <div className={`${classes} justify-end flex relative`}>
       <p
-        className="flex min-w-[140px] justify-end cursor-pointer"
+        className="flex min-w-[140px] justify-end items-center cursor-pointer"
         onClick={() => toggleCart()}
       >
         {totalItems} items
