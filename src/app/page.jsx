@@ -3,10 +3,12 @@ import ProductList from "@/components/ProductList/ProductList";
 import Header from "@/components/Header/Header";
 import Cart from "@/components/Cart/Cart";
 import { useStore } from "../store";
+import apiRequest from "@/lib/apiRequest";
 
 const getProducts = async () => {
-  const data = await fetch("https://fakestoreapi.com/products");
-  const products = await data.json();
+  // const data = await fetch("https://fakestoreapi.com/products");
+  // const products = await data.json();
+  const products = await apiRequest("https://fakestoreapi.com/products/");
   return products;
 };
 
@@ -19,7 +21,7 @@ export default async function Home() {
     <>
       <Header />
 
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="max-w-screen-xl mx-auto flex min-h-screen flex-col items-center justify-between p-10 lg:p-20">
         <ProductList products={products} />
       </main>
     </>

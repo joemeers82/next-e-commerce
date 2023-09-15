@@ -4,7 +4,7 @@ import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import UpdateCart from "../UpdateCart/UpdateCart";
 import { useStore } from "../../store";
 
-export default function Cart() {
+export default function Cart({ classes }) {
   const state = useStore((state) => state);
   const cart = useStore((state) => state.productCart);
   const showCart = useStore((state) => state.showSideCart);
@@ -27,21 +27,18 @@ export default function Cart() {
   }
 
   return (
-    <div className="border justify-end flex relative">
-      {" "}
-      {/* Added relative positioning here */}
-      <p className="flex min-w-[140px] justify-between">
+    <div className={`${classes} justify-end flex relative`}>
+      <p
+        className="flex min-w-[140px] justify-end cursor-pointer"
+        onClick={() => toggleCart()}
+      >
         {totalItems} items
-        <ShoppingCartOutlinedIcon
-          className="cursor-pointer"
-          fontSize="large"
-          onClick={() => toggleCart()}
-        />
+        <ShoppingCartOutlinedIcon fontSize="large" />
       </p>
       <div
         className={`${
           showCart ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out fixed right-0 w-96 right-[-12px] top-0 h-full bottom-0 border bg-white z-10 overflow-y-auto`}
+        } transition-transform duration-700 ease-in-out fixed right-0 w-96 right-[-12px] top-0 h-full bottom-0 border bg-white z-10 overflow-y-auto`}
       >
         <div className="flex justify-between items-center p-3 border-b">
           {" "}
