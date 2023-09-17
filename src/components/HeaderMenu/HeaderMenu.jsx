@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-
+import Link from "next/link";
+import { stringToSlug } from "@/lib/helpers";
 export default function HeaderMenu({ categories, classes }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -35,7 +36,7 @@ export default function HeaderMenu({ categories, classes }) {
         {categories.map((category, i) => {
           return (
             <li className="md:ml-3 md:my-4 whitespace-nowrap" key={i}>
-              {category}
+              <Link href={`/${stringToSlug(category)} `}>{category}</Link>
             </li>
           );
         })}

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ProductList from "@/components/ProductList/ProductList";
 import Header from "@/components/Header/Header";
-import Cart from "@/components/Cart/Cart";
+// import Cart from "@/components/Cart/Cart";
 import { useStore } from "../store";
 import apiRequest from "@/lib/apiRequest";
 
