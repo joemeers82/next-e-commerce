@@ -28,7 +28,7 @@ export default function HeaderMenu({ categories, classes }) {
       </button>
 
       <ul
-        className={`flex flex-col bg-white z-10 mt-[20px] text-left md:mt-0 absolute md:relative md:flex-row gap-5 md:m-3 justify-center ${
+        className={`flex flex-col bg-white z-10 mt-[20px] text-left md:mt-0 absolute md:static md:flex-row gap-5 md:m-3 justify-center ${
           isOpen ? "flex" : "hidden"
         } md:flex`}
       >

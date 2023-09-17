@@ -46,9 +46,11 @@ export default function ProductCard({ product }) {
           </div>
         </Link>
         <div className="rounded py-1">
-          <span className="text-slate-500">{capitalize(product.category)}</span>
+          <span className="pl-4 text-slate-500">
+            {capitalize(product.category)}
+          </span>
         </div>
-        <p className="font-semibold text-md">{product.title}</p>
+        <p className="p-4 font-semibold text-md">{product.title}</p>
       </li>
     </>
   );

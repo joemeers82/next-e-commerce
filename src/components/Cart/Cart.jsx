@@ -35,13 +35,21 @@ export default function Cart({ classes }) {
         {totalItems} items
         <ShoppingCartOutlinedIcon fontSize="large" />
       </p>
+
+      {/* Transparent grey overlay */}
+      <div
+        onClick={() => toggleCart()}
+        className={`${
+          showCart ? "block" : "hidden"
+        } fixed inset-0 bg-gray-500 opacity-50 z-10`}
+      ></div>
+
       <div
         className={`${
           showCart ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-700 ease-in-out fixed right-0 w-96 right-[-12px] top-0 h-full bottom-0 border bg-white z-10 overflow-y-auto`}
       >
         <div className="flex justify-between items-center p-3 border-b">
-          {" "}
           <h3 className="text-lg">Shopping Cart</h3>
           <span className="cursor-pointer mr-4" onClick={() => toggleCart()}>
             X
