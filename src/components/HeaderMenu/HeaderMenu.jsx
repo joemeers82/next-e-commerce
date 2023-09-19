@@ -35,7 +35,10 @@ export default function HeaderMenu({ categories, classes }) {
       >
         {categories.map((category, i) => {
           return (
-            <li className="md:ml-3 md:my-4 whitespace-nowrap" key={i}>
+            <li
+              className="md:ml-3 md:my-4 whitespace-nowrap hover:underline underline-offset-2"
+              key={i}
+            >
               <Link href={`/${stringToSlug(category)} `}>{category}</Link>
             </li>
           );
