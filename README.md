@@ -15,14 +15,18 @@ This repository contains the source code for an example E-commerce site, built u
 - **fakeStoreApi**: fakeStoreApi is a free online REST API that you can use whenever you need Pseudo-real data for your e-commerce or shopping website without running any server-side code
 - **Zustand**: A small, fast and scalable bearbones state-management solution using simplified flux principles
 
-####Clone the repo
+#### Clone the repo
+
 `git clone https://github.com/joemeers82/next-e-commerce`
 
-####Navigate to cloned directory
+#### Navigate to cloned directory
+
 `cd next-e-commerce`
 
-####Install dependencies
+#### Install dependencies
+
 `npm install`
 
-####Run the development server
+#### Run the development server
+
 `npm run dev`
