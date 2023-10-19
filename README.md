@@ -1,34 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextjs E-commerce site
 
-## Getting Started
+This repository contains the source code for an example E-commerce site, built using Next.js and using the fakestore api and Zustand.
 
-First, run the development server:
+## Preview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+![ecommerce example](./ecommerce.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[E-commerce on Vercel](https://next-e-commerce-weld.vercel.app/)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: The React framework for building efficient and interactive user interfaces.
+- **TailwindCSS**: Utility-first CSS framework
+- **fakeStoreApi**: fakeStoreApi is a free online REST API that you can use whenever you need Pseudo-real data for your e-commerce or shopping website without running any server-side code
+- **Zustand**: A small, fast and scalable bearbones state-management solution using simplified flux principles
 
-## Learn More
+####Clone the repo
+`git clone https://github.com/joemeers82/next-e-commerce`
 
-To learn more about Next.js, take a look at the following resources:
+####Navigate to cloned directory
+`cd next-e-commerce`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+####Install dependencies
+`npm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+####Run the development server
+`npm run dev`
