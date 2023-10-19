@@ -13,6 +13,7 @@ This repository contains the source code for an example E-commerce site, built u
 - **Next.js**: The React framework for building efficient and interactive user interfaces.
 - **TailwindCSS**: Utility-first CSS framework
 - **fakeStoreApi**: fakeStoreApi is a free online REST API that you can use whenever you need Pseudo-real data for your e-commerce or shopping website without running any server-side code
+
 - **Zustand**: A small, fast and scalable bearbones state-management solution using simplified flux principles
 
 #### Clone the repo
